@@ -14,8 +14,8 @@ body {
 }
 
 #content {
-	width: min(92%, 900px);
-	margin: 0 auto;
+	width: min(92%, 1200px);
+	margin:auto;
 	padding: clamp(1.5rem, 5vw, 4rem);
 	background-color: rgba(247, 240, 225, .95);
 	border: 1px solid #b58c67;
@@ -23,12 +23,24 @@ body {
 	box-shadow: 0 10px 28px rgba(63, 48, 41, .18);
 }
 
-/* Navigation */
 #content a {
-	color: #9a4f3f;
-	font-weight: 700;
-	text-decoration: none;
+    text-decoration:none;
+    font-weight:bold;
+    color: #9a4f3f;
 }
+
+#assignment-grid, #project-grid { 
+    margin:0px;
+    padding:5px;
+    text-align:center;
+}
+
+#assignment-grid img, #project-grid img{
+    max-width:300px;
+    border: 1px solid black;
+}
+
+/* Navigation */
 
 #content a:hover, #assignments a:focus {
 	color: #5d7254;
@@ -81,4 +93,39 @@ footer {
 	margin-top: 2rem;
 	color: #806957;
 	text-align: center;
+}
+
+@media (min-width: 600px) {
+    .columns{
+        display:flex;
+        gap: 2rem;
+    }
+    #section{
+        flex:1;
+        border:0;
+    }
+    .one{
+        flex:1;
+        background: white;
+        border-radius: 10px;
+	    border: 2px solid #b58c67;
+        padding:5px;
+
+    }
+    .two{
+        flex:2;
+    }
+    
+}
+
+@media (max-width: 601px) {
+    .one{
+        flex:1;
+	    border: 2px solid #b58c67;
+        margin-bottom:50px;
+        border-radius:10px;
+        background: white;
+        padding:5px;
+    }
+    
 }

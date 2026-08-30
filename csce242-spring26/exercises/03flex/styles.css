@@ -1,0 +1,81 @@
+/* Structure */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+#content {
+    width:80%;
+    margin:auto;
+}
+
+#main-header {
+    background-color:bisque;
+}
+
+#sidebar {
+    background-color:maroon
+}
+
+#sidebar, #info {
+    padding:5px;
+}
+
+#quick-links, #main-nav ul {
+    list-style-type: none; /*removes bullets from ul*/
+    padding-left:0; /*removes indent from ul*/
+}
+
+#main-nav a {
+    text-decoration: none; /*removes underline from links*/
+    color:black;
+}
+
+#main-nav li {
+    background-color:aliceblue;
+    padding:5px;
+    border-bottom: 1px solid black;
+}
+
+/* images */
+img {
+    max-width:100%;
+}
+/* Typography */ /*a = anchor tag*/
+#main-header h1{
+    margin:auto;
+    text-align:center;
+    padding:5px;
+}
+
+/* Responsive Design */
+
+/* an aside should not stack when you have the room, so lets say when it gets to a certain size dont */
+
+@media (min-width: 1000px) {
+    body {
+        background:brown; /* 600 pixels or larger be red. */
+    }
+    .columns{
+        display:flex; /* turns content into columns, container gets this class.*/
+    }
+    #main-nav li {
+        flex:1;
+        border:0;
+    }
+    .one {
+        flex:1; /*ratio number */
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex:3;
+    }
+    .four {
+        flex:4;
+    }
+    .five {
+        flex:5;
+    }
+}

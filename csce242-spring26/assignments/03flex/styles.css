@@ -1,0 +1,181 @@
+/*Structural*/
+body {
+	background-color: #C2BCAB;
+	background-size: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    background-color:blanchedalmond;
+    width: min(92%, 1200px);
+    margin:auto;
+}
+#main-header{
+    background-color:peachpuff; 
+}
+
+#main-header h1{
+    margin:0;
+    padding:20px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    color: darkcyan;
+
+}
+
+#pane1 header h3{
+    background-color:darkcyan;
+    display:flex;  
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:10px;
+    color:white;
+}
+
+#pane1 {
+    display: flex;
+    gap: 5px;
+}
+
+#pane1-tile1, #pane1-tile2, #pane1-tile3, #pane1-sidebar{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#pane1 img{
+    max-width:100%;
+    margin:0;
+}
+
+#pane1-sidebar{
+    text-align:center;
+    background-color:lightsalmon;
+}
+#pane1-sidebar h1{
+    color:darkcyan;
+}
+#pane1-sidebar ul{
+    margin:5px;
+    padding:0;
+    align-items:center;
+}
+#pane1-sidebar li{
+    list-style-type:none;
+    background-color:white;
+    padding:5px;
+    border:1px solid lightsalmon;
+    color:lightsalmon;
+}
+
+#pane2, #pane3{
+    margin-bottom: 5px;
+}
+
+#pane2, #pane3 img{
+    max-width:100%;
+}
+
+#pane2-content, #pane3-content{
+    background-color:darkcyan;
+    margin:0;
+    padding:10px;
+    color:white;
+}
+
+#main-footer{
+    background-color:pink;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+    color:white;
+
+}
+
+/*Navigation*/
+#main-nav{
+    background-color:pink;
+    margin:0;
+}
+
+#main-nav ul{
+    width: 100%;
+    padding-left:0;
+}
+#main-nav li {
+    list-style-type:none;
+    padding:20px;
+    text-align:center;
+    border:1px solid black;
+    text-decoration:none;
+    flex: 1;
+    font-size:1.3em;
+}
+
+#main-nav a{
+    text-decoration:none;
+    color:white;
+}
+
+/*Typography*/
+
+
+/*Accessibility*/
+
+@media (min-width: 600px) {
+    .columns{
+        display:flex;
+        align-items: stretch;
+    }
+    .one{
+        flex:1;
+    }
+    .two{
+        flex:2;
+    }
+}
+
+@media (max-width: 599px) {
+    .columns {
+        display: block;
+    }
+
+    #main-nav ul {
+        display: block;
+    }
+
+    #main-nav li {
+        display: block;
+    }
+
+    #pane1 {
+        display: block;
+    }
+
+    #pane1-sidebar,
+    #pane1-tile1,
+    #pane1-tile2,
+    #pane1-tile3,
+    #pane2,
+    #pane3 {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    #pane2,
+    #pane3 {
+        display: block;
+    }
+
+    #pane2 img,
+    #pane3 img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
