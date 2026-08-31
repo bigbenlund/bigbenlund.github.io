@@ -35,9 +35,24 @@ body {
     text-align:center;
 }
 
+#assignment-grid .one,
+#project-grid .one {
+    min-width: 0;
+    flex: 1 1 0;
+}
+
 #assignment-grid img, #project-grid img{
-    max-width:300px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
     border: 1px solid black;
+}
+
+#assignment-grid p,
+#project-grid p {
+    overflow-wrap: anywhere;
 }
 
 /* Navigation */
@@ -99,13 +114,16 @@ footer {
     .columns{
         display:flex;
         gap: 2rem;
+        min-width: 0;
     }
     #section{
         flex:1;
+        min-width: 0;
         border:0;
     }
     .one{
-        flex:1;
+        flex:1 1 0;
+        min-width: 0;
         background: white;
         border-radius: 10px;
 	    border: 2px solid #b58c67;
@@ -114,6 +132,7 @@ footer {
     }
     .two{
         flex:2;
+        min-width: 0;
     }
     
 }
