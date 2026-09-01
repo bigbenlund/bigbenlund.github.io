@@ -86,8 +86,9 @@ body {
     background-color:darkcyan;
 }
 
-#pane2, #pane3 img{
+#pane2 img, #pane3 img{
     max-width:100%;
+    display: block;
 }
 
 #pane2-content, #pane3-content{

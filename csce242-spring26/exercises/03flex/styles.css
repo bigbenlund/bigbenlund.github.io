@@ -11,8 +11,15 @@ body {
 
 #main-header {
     background-color:bisque;
+    position:relative; /* closest parent that is relative, the children will be absolutely positioned to them */
+    padding-top:4%;
 }
 
+#logo {
+    position:absolute; /* absolute does not preserve space on screen for it */ /* relative DOES reserve space for it */ 
+    top:5px;
+    left:5px;
+}
 #sidebar {
     background-color:maroon
 }
