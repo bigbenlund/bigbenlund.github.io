@@ -79,8 +79,6 @@ address {
   border: 3px solid var(--white);
 }
 
-/* Header */
-
 .site-header {
   background: var(--black);
 }
@@ -156,12 +154,14 @@ address {
   letter-spacing: 0.03em;
 }
 
-/* Hero and intro */
+.hero img,
+.feature__image {
+  width: 100%;
+  object-fit: cover;
+}
 
 .hero img {
-  width: 100%;
   height: 600px;
-  object-fit: cover;
 }
 
 .intro {
@@ -177,16 +177,12 @@ address {
   line-height: 1.5;
 }
 
-/* Feature sections with overlapping box */
-
 .feature {
   position: relative;
 }
 
 .feature__image {
-  width: 100%;
   height: 560px;
-  object-fit: cover;
 }
 
 .feature__inner {
@@ -227,8 +223,6 @@ address {
   margin-bottom: 32px;
   line-height: 1.6;
 }
-
-/* Quote */
 
 .quote {
   padding: 90px 0 80px;
@@ -294,8 +288,6 @@ address {
   color: var(--garnet);
 }
 
-/* Cards */
-
 .cards {
   padding: 50px 0 80px;
 }
@@ -336,8 +328,6 @@ address {
   line-height: 1.5;
 }
 
-/* Stay connected */
-
 .connect {
   padding: 95px 20px 0;
   background: var(--gray);
@@ -360,8 +350,6 @@ address {
   justify-content: center;
   margin-top: 80px;
 }
-
-/* Unit footer */
 
 .connect__buttons .button {
   margin: 0 32px;
@@ -413,11 +401,15 @@ address {
   margin-left: 22px;
 }
 
-.unit-footer__links {
-  display: flex;
+.unit-footer__links,
+.unit-footer__address {
   margin-left: 40px;
   padding-left: 40px;
   border-left: 1px solid #b9b9b9;
+}
+
+.unit-footer__links {
+  display: flex;
 }
 
 .unit-footer__links ul + ul {
@@ -441,9 +433,6 @@ address {
   flex: 0 0 240px;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  padding-left: 40px;
-  border-left: 1px solid #b9b9b9;
   line-height: 1.5;
 }
 
@@ -451,8 +440,6 @@ address {
   font-weight: bold;
   color: var(--garnet);
 }
-
-/* University footer */
 
 .university-footer {
   background: var(--garnet);
@@ -549,8 +536,6 @@ address {
   margin-left: 16px;
   padding-left: 16px;
 }
-
-/* Small screens */
 
 @media (max-width: 900px) {
   body {
@@ -652,8 +637,8 @@ address {
   }
 
   .connect__buttons .button {
-  margin: 0 32px;
-}
+    margin: 0 32px;
+  }
 
 .unit-footer {
     padding: 50px 0 40px;
