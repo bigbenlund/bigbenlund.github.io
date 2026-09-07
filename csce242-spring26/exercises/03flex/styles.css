@@ -20,6 +20,37 @@ body {
     top:5px;
     left:5px;
 }
+
+#hero {
+    position:0;
+
+}
+#hero-description {
+    position:absolute;
+    top:60%;
+    left:5%;
+    background:rgb(255,255,255,0.8);
+    padding:20px;
+}
+
+.hero-arrow {
+    position:absolute;
+    font-size:8em;
+    color:white;
+    text-decoration:none;
+}
+
+#hero-arrow-right {
+    right:2%;
+    top:50%;
+    
+}
+
+#hero-arrow-left {
+    left:2%;
+    top:50%;
+}
+/* Sidebar */
 #sidebar {
     background-color:maroon
 }
@@ -28,12 +59,12 @@ body {
     padding:5px;
 }
 
-#quick-links, #main-nav ul {
+#quick-links, #login-nav, #main-nav, ul {
     list-style-type: none; /*removes bullets from ul*/
     padding-left:0; /*removes indent from ul*/
 }
 
-#main-nav a {
+#main-nav, #login-nav, a {
     text-decoration: none; /*removes underline from links*/
     color:black;
 }
@@ -42,6 +73,20 @@ body {
     background-color:aliceblue;
     padding:5px;
     border-bottom: 1px solid black;
+}
+
+#login-nav li {
+    display:inline-block;
+}
+
+#login-nav li:not(:last-child)::after {
+    content: " |"
+}
+
+#login-nav {
+    position:absolute;
+    top:1%;
+    right:1%;
 }
 
 /* images */
