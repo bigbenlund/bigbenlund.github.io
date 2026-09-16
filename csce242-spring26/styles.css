@@ -29,19 +29,19 @@ body {
     color: #9a4f3f;
 }
 
-#assignment-grid, #project-grid { 
+#assignment-grid, #project-grid, #assignment-grid2 { 
     margin:0px;
     padding:5px;
     text-align:center;
 }
 
-#assignment-grid .one,
+#assignment-grid .one, #assignment-grid2 .one
 #project-grid .one {
     min-width: 0;
     flex: 1 1 0;
 }
 
-#assignment-grid img, #project-grid img{
+#assignment-grid img, #project-grid img, #assignment-grid2 img{
     display: block;
     width: 100%;
     max-width: 300px;
@@ -50,8 +50,7 @@ body {
     border: 1px solid black;
 }
 
-#assignment-grid p,
-#project-grid p {
+#assignment-grid p, #project-grid p, #assignment-grid2 p{
     overflow-wrap: anywhere;
 }
 
