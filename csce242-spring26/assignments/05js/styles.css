@@ -1,0 +1,88 @@
+/*Formatting*/
+body {
+    background-color: olivedrab;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header {
+    place-content:center;
+    place-items:center;
+
+}
+
+#assignment section{
+    background-color:olive;
+    padding:10px;
+    margin:10px;
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    flex:1;
+    border-width:2px;
+    border-color:white;
+}
+.columns {
+    display:flex;
+    margin:5px;
+    gap:70px;
+}
+
+/* Hiding */
+.hidden {
+    display:none;
+}
+
+#assignment h3 {
+    place-self:center;
+}
+
+
+/* Speech */
+#speech {
+    place-items:center;
+}
+.speech-bubble {
+	position: relative;
+	background: white;
+	border-radius: .4em;
+    border-color:black;
+    border-width:px;
+    padding:10px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	margin-left: -20px;
+	margin-bottom: -20px;
+}
+
+/*Sticker*/
+#img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#lil-sticker {
+    position:absolute;
+    top:0px;
+    left:110px;
+    top:80px;
+    opacity:0;
+}
+
+/* Mobilee */
+@media (max-width: 600px) {
+
+.columns {
+    display:block;
+    margin:10px;
+}
+}
