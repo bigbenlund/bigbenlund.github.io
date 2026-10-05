@@ -29,19 +29,13 @@ body {
     color: #9a4f3f;
 }
 
-#assignment-grid, #project-grid, #assignment-grid2 { 
+#assignment-grid, #project-grid {
     margin:0px;
     padding:5px;
     text-align:center;
 }
 
-#assignment-grid .one, #assignment-grid2 .one
-#project-grid .one {
-    min-width: 0;
-    flex: 1 1 0;
-}
-
-#assignment-grid img, #project-grid img, #assignment-grid2 img{
+#assignment-grid img, #project-grid img{
     display: block;
     width: 100%;
     max-width: 300px;
@@ -50,7 +44,7 @@ body {
     border: 1px solid black;
 }
 
-#assignment-grid p, #project-grid p, #assignment-grid2 p{
+#assignment-grid p, #project-grid p{
     overflow-wrap: anywhere;
 }
 
@@ -111,17 +105,14 @@ footer {
 
 @media (min-width: 600px) {
     .columns{
-        display:flex;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
-        min-width: 0;
     }
-    #section{
-        flex:1;
-        min-width: 0;
-        border:0;
+    #project-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     .one{
-        flex:1 1 0;
         min-width: 0;
         background: white;
         border-radius: 10px;
@@ -138,7 +129,6 @@ footer {
 
 @media (max-width: 601px) {
     .one{
-        flex:1;
 	    border: 2px solid #b58c67;
         margin-bottom:50px;
         border-radius:10px;
