@@ -35,10 +35,6 @@ body {
     position:relative; 
 }
 
-#hero img {
-    display:block;
-}
-
 .hero-arrow {
     position:absolute;
     top:50%;
@@ -133,6 +129,18 @@ body {
     padding: 18px;
 }
 
+.special {
+    background-color: skyblue;
+    padding:5px;
+    margin:5px;
+    border:1px solid pink;
+}
+
+.error {
+    color:red;
+    font-style: italic;
+}
+
 /* images */
 img {
     max-width:100%;
@@ -187,9 +195,11 @@ h1, h2, h3 {
 #thermometer {
     width:25%;
     height:200px;
-    margin-right:30%;
+    margin-right:10%;
     border:2px solid turquoise;
     background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
+    margin-left:10px;
+    margin-bottom:10px;
 }
 
 /* Hiding */
@@ -197,10 +207,18 @@ h1, h2, h3 {
     display:none;
 }
 
+.hide-small {
+    display:none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    .hide-small {
+        display:flex;
+    }
+
     /* Structure */
     #content {
         width:80%;
@@ -227,10 +245,10 @@ h1, h2, h3 {
         flex:1;
         border:0;
     }
+
     #toggle-nav {
         display:none;
     }
-
 
     /* Columns */
     .one {
