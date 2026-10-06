@@ -25,9 +25,25 @@
             <main>
                 <h2 id="page-title">Contact Us</h2>
                 <div class="projects">
-                    
+                    <form id="contact-form" action="" method="POST">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="test@test.com" required>
+                        </p>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea name="message" required>Default</textarea>
+                        </p>
+                        <button type="submit">Submit</button>
+                        <p id="result"></p>
+                    </form>
                 </div>
             </main>
         </div>
+        <script src="scripts/contact.js"></script>
     </body>
 </html>
